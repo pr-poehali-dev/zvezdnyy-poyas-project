@@ -280,10 +280,8 @@ export default function Index() {
       {/* Footer / Thanks */}
       <section className="py-20 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-7xl md:text-9xl font-bold tracking-tighter mb-8">
-            СПАСИБО
-          </h2>
-          <p className="text-2xl uppercase tracking-widest text-neutral-400 mb-2">За внимание</p>
+          <h2 className="text-7xl md:text-9xl font-bold tracking-tighter mb-8">СПАСИБО ЗА ВНИМАНИЕ</h2>
+          <p className="text-2xl uppercase tracking-widest text-neutral-400 mb-2"></p>
           <p className="text-sm uppercase tracking-widest text-neutral-600 mt-8"></p>
         </div>
       </section>
