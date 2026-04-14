@@ -151,6 +151,77 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Champions Section */}
+      <section className="py-20 px-4 md:px-8 bg-white">
+        <div className="container mx-auto">
+          <h2 className="text-6xl font-bold tracking-tighter mb-2">ЧЕМПИОНЫ</h2>
+          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">Самое интересное</p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-black">
+            {/* Photo */}
+            <div className="relative overflow-hidden min-h-[400px] lg:min-h-0">
+              <img
+                src="https://cdn.poehali.dev/projects/6e2a49b9-f915-4a92-bcd5-a93cb69bdc47/bucket/1370ffd7-114d-47da-aea0-40f82472eab1.png"
+                alt="Костов Владислав на фоне разводного моста"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <p className="text-white text-sm uppercase tracking-widest">Костов Владислав · 9Г</p>
+                <p className="text-white/60 text-xs mt-1">На фоне разводного моста · СПБ</p>
+              </div>
+            </div>
+
+            {/* 3 cards */}
+            <div className="flex flex-col divide-y divide-black border-t border-black lg:border-t-0 lg:border-l">
+              {/* Гигант */}
+              <div className="group flex gap-6 p-8 hover:bg-red-600 transition-colors duration-200">
+                <div className="w-12 h-12 border-2 border-black group-hover:border-white flex items-center justify-center shrink-0 transition-colors">
+                  <Icon name="Maximize2" size={22} className="text-black group-hover:text-white transition-colors" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-red-600 group-hover:text-white/70 mb-1 transition-colors">Гигант</div>
+                  <h3 className="text-2xl font-bold tracking-tighter mb-1 group-hover:text-white transition-colors">Синий мост</h3>
+                  <div className="text-4xl font-bold text-neutral-200 group-hover:text-white/20 mb-2 transition-colors">97 м</div>
+                  <p className="text-neutral-500 group-hover:text-white/80 text-sm leading-relaxed transition-colors">
+                    Самый широкий мост Петербурга и один из самых широких в мире — многие горожане не замечают, что идут по мосту.
+                  </p>
+                </div>
+              </div>
+
+              {/* Ветеран */}
+              <div className="group flex gap-6 p-8 hover:bg-red-600 transition-colors duration-200">
+                <div className="w-12 h-12 border-2 border-black group-hover:border-white flex items-center justify-center shrink-0 transition-colors">
+                  <Icon name="Clock" size={22} className="text-black group-hover:text-white transition-colors" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-red-600 group-hover:text-white/70 mb-1 transition-colors">Ветеран</div>
+                  <h3 className="text-2xl font-bold tracking-tighter mb-1 group-hover:text-white transition-colors">Эрмитажный мост</h3>
+                  <div className="text-4xl font-bold text-neutral-200 group-hover:text-white/20 mb-2 transition-colors">1763</div>
+                  <p className="text-neutral-500 group-hover:text-white/80 text-sm leading-relaxed transition-colors">
+                    Самый старый сохранившийся каменный мост Петербурга. Стоит у стен Эрмитажа со времён Екатерины II.
+                  </p>
+                </div>
+              </div>
+
+              {/* Шедевр */}
+              <div className="group flex gap-6 p-8 hover:bg-red-600 transition-colors duration-200">
+                <div className="w-12 h-12 border-2 border-black group-hover:border-white flex items-center justify-center shrink-0 transition-colors">
+                  <Icon name="Sparkles" size={22} className="text-black group-hover:text-white transition-colors" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-red-600 group-hover:text-white/70 mb-1 transition-colors">Шедевр</div>
+                  <h3 className="text-2xl font-bold tracking-tighter mb-1 group-hover:text-white transition-colors">Троицкий мост</h3>
+                  <div className="text-4xl font-bold text-neutral-200 group-hover:text-white/20 mb-2 transition-colors">582 м</div>
+                  <p className="text-neutral-500 group-hover:text-white/80 text-sm leading-relaxed transition-colors">
+                    Самый ажурный мост города. Французский модерн, узорчатые решётки и вид на Петропавловскую крепость.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
