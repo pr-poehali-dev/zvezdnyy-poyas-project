@@ -11,7 +11,7 @@ export default function Index() {
           </a>
           <div className="flex space-x-8">
             <a href="#champions" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Чемпионы
+              Маршрут
             </a>
             <a href="#about" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               О походе
@@ -104,51 +104,49 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Champions Section */}
+      {/* Bridges List Section */}
       <section id="champions" className="py-20 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto">
-          <h2 className="text-6xl font-bold tracking-tighter mb-4">ЧЕМПИОНЫ</h2>
-          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">Самое интересное</p>
+          <h2 className="text-6xl font-bold tracking-tighter mb-4">МАРШРУТ</h2>
+          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">21 мост · весь день в пути</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Giant */}
-            <div className="group border border-neutral-800 p-8 hover:border-red-600 transition-colors duration-300">
-              <div className="w-16 h-16 bg-red-600 flex items-center justify-center mb-6">
-                <Icon name="Maximize2" size={28} className="text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-neutral-800">
+            {[
+              { n: "01", name: "Нева мост" },
+              { n: "02", name: "Троицкий мост" },
+              { n: "03", name: "Эрмитажный мост" },
+              { n: "04", name: "Поцелуев мост" },
+              { n: "05", name: "Зелёный мост" },
+              { n: "06", name: "Певческий мост" },
+              { n: "07", name: "Краснофлотский мост" },
+              { n: "08", name: "Мост Декабристов" },
+              { n: "09", name: "Матвеев мост" },
+              { n: "10", name: "Театральный мост" },
+              { n: "11", name: "Красный мост" },
+              { n: "12", name: "Синий мост" },
+              { n: "13", name: "Мало-Конюшенный мост" },
+              { n: "14", name: "Почтамтский мост" },
+              { n: "15", name: "1-й Садовый мост" },
+              { n: "16", name: "1-й Инженерный мост" },
+              { n: "17", name: "2-й Садовый мост" },
+              { n: "18", name: "Прачечный мост" },
+              { n: "19", name: "Большой Конюшенный мост" },
+              { n: "20", name: "Нижний Лебяжий мост" },
+              { n: "21", name: "Верхний Лебяжий мост" },
+            ].map(({ n, name }) => (
+              <div
+                key={n}
+                className="group flex items-center gap-6 border-b border-r border-neutral-800 px-6 py-5 hover:bg-red-600 transition-colors duration-200 cursor-default"
+              >
+                <span className="text-2xl font-bold text-neutral-700 group-hover:text-white/60 transition-colors w-10 shrink-0">
+                  {n}
+                </span>
+                <span className="text-lg font-semibold tracking-tight group-hover:text-white transition-colors">
+                  {name}
+                </span>
+                <Icon name="ArrowRight" size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity text-white" />
               </div>
-              <div className="text-xs uppercase tracking-widest text-red-600 mb-3">Гигант</div>
-              <h3 className="text-3xl font-bold tracking-tighter mb-4">Синий мост</h3>
-              <div className="text-5xl font-bold text-neutral-700 mb-4">97 м</div>
-              <p className="text-neutral-400 leading-relaxed">
-                Самый широкий мост Петербурга и один из самых широких в мире. Настолько широк, что многие горожане не замечают — они идут по мосту.
-              </p>
-            </div>
-
-            {/* Veteran */}
-            <div className="group border border-neutral-800 p-8 hover:border-red-600 transition-colors duration-300">
-              <div className="w-16 h-16 bg-white flex items-center justify-center mb-6">
-                <Icon name="Clock" size={28} className="text-black" />
-              </div>
-              <div className="text-xs uppercase tracking-widest text-red-600 mb-3">Ветеран</div>
-              <h3 className="text-3xl font-bold tracking-tighter mb-4">Эрмитажный мост</h3>
-              <div className="text-5xl font-bold text-neutral-700 mb-4">1763</div>
-              <p className="text-neutral-400 leading-relaxed">
-                Самый старый из сохранившихся каменных мостов Петербурга. Стоит у стен Эрмитажа и помнит ещё времена Екатерины II.
-              </p>
-            </div>
-
-            {/* Masterpiece */}
-            <div className="group border border-neutral-800 p-8 hover:border-red-600 transition-colors duration-300">
-              <div className="w-16 h-16 bg-red-600 flex items-center justify-center mb-6">
-                <Icon name="Star" size={28} className="text-white" />
-              </div>
-              <div className="text-xs uppercase tracking-widest text-red-600 mb-3">Шедевр</div>
-              <h3 className="text-3xl font-bold tracking-tighter mb-4">Троицкий мост</h3>
-              <div className="text-5xl font-bold text-neutral-700 mb-4">582 м</div>
-              <p className="text-neutral-400 leading-relaxed">
-                Самый ажурный мост города. Французский модерн, узорчатые решётки и вид на Петропавловскую крепость — настоящий архитектурный шедевр.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
