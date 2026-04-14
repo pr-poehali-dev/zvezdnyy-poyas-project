@@ -95,7 +95,7 @@ export default function Index() {
       </section>
 
       {/* Bridges List Section */}
-      <section id="champions" className="py-20 px-4 md:px-8 bg-black text-white">
+      <section id="champions" className="px-4 md:px-8 bg-black text-white py-[134px]">
         <div className="container mx-auto">
           <h2 className="text-6xl font-bold tracking-tighter mb-4">МАРШРУТ</h2>
           <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">21 мост · весь день в пути</p>
@@ -142,7 +142,7 @@ export default function Index() {
       </section>
 
       {/* Champions Section */}
-      <section className="py-20 px-4 md:px-8 bg-white">
+      <section className="px-4 md:px-8 bg-white py-[195px] rounded-none">
         <div className="container mx-auto">
           <h2 className="text-6xl font-bold tracking-tighter mb-2">САМОЕ ИНТЕРЕСНОЕ</h2>
           <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12"></p>
@@ -192,7 +192,7 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 md:px-8">
+      <section id="about" className="px-4 md:px-8 py-[150px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-5">
@@ -253,10 +253,10 @@ export default function Index() {
       </section>
 
       {/* Quote Section */}
-      <section id="quote" className="px-4 md:px-8 bg-red-600 text-white py-[353px]">
+      <section id="quote" className="px-4 md:px-8 bg-red-600 text-white py-[400px]">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="text-8xl font-bold tracking-tighter leading-none mb-12 opacity-20">"</div>
+            <div className="text-8xl font-bold tracking-tighter leading-none mb-12 opacity-20 py-0"></div>
             <blockquote className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-12 -mt-16">
               Мосты — это не просто конструкции, это история, которую я потрогал руками.
             </blockquote>
@@ -268,7 +268,7 @@ export default function Index() {
       </section>
 
       {/* Footer / Thanks */}
-      <section className="px-4 md:px-8 bg-black text-white py-[279px]">
+      <section className="px-4 md:px-8 bg-black text-white py-[327px]">
         <div className="container mx-auto text-center">
           <h2 className="text-7xl md:text-9xl font-bold tracking-tighter mb-8">СПАСИБО ЗА ВНИМАНИЕ</h2>
           <p className="text-2xl uppercase tracking-widest text-neutral-400 mb-2"></p>
