@@ -88,7 +88,7 @@ export default function Index() {
                 <text x="200" y="360" textAnchor="middle" fill="#555" fontSize="11" fontFamily="monospace" letterSpacing="3">МАРШРУТ · ЦЕНТР СПБ</text>
                 <text x="200" y="30" textAnchor="middle" fill="#dc2626" fontSize="13" fontFamily="monospace" letterSpacing="4" fontWeight="bold">21 МОСТ</text>
               </svg>
-              <div className="absolute bottom-4 right-4 text-white text-xs font-mono opacity-40">СПБ / 2024</div>
+              <div className="absolute bottom-4 right-4 text-white text-xs font-mono opacity-40">СПБ / 2025</div>
             </div>
           </div>
         </div>
