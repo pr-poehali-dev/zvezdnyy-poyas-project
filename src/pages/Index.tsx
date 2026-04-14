@@ -5,26 +5,18 @@ export default function Index() {
     <main className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-black">
-        <div className="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
-          <a href="/" className="text-xl font-bold tracking-tighter">
-            МОСТЫ ПИТЕРА
-          </a>
+        <div className="container mx-auto md:px-8 flex justify-between items-center bg-transparent rounded-0 py-0 px-0">
+          <a href="/" className="text-xl font-bold tracking-tighter"></a>
           <div className="flex space-x-8">
-            <a href="#champions" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Маршрут
-            </a>
-            <a href="#about" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              О походе
-            </a>
-            <a href="#quote" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Итог
-            </a>
+            <a href="#champions" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors"></a>
+            <a href="#about" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors"></a>
+            <a href="#quote" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors"></a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 md:px-8 container mx-auto">
+      <section className="px-4 md:px-8 container mx-auto py-[216px]">
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-7 mb-8 md:mb-0">
             {/* Corner tag */}
@@ -263,7 +255,7 @@ export default function Index() {
       </section>
 
       {/* Quote Section */}
-      <section id="quote" className="py-20 px-4 md:px-8 bg-red-600 text-white">
+      <section id="quote" className="px-4 md:px-8 bg-red-600 text-white py-[353px]">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-8xl font-bold tracking-tighter leading-none mb-12 opacity-20">"</div>
@@ -278,7 +270,7 @@ export default function Index() {
       </section>
 
       {/* Footer / Thanks */}
-      <section className="py-20 px-4 md:px-8 bg-black text-white">
+      <section className="px-4 md:px-8 bg-black text-white py-[279px]">
         <div className="container mx-auto text-center">
           <h2 className="text-7xl md:text-9xl font-bold tracking-tighter mb-8">СПАСИБО ЗА ВНИМАНИЕ</h2>
           <p className="text-2xl uppercase tracking-widest text-neutral-400 mb-2"></p>
