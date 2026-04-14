@@ -284,9 +284,7 @@ export default function Index() {
             СПАСИБО
           </h2>
           <p className="text-2xl uppercase tracking-widest text-neutral-400 mb-2">За внимание</p>
-          <p className="text-sm uppercase tracking-widest text-neutral-600 mt-8">
-            Костов Владислав · 9Г · Мосты Питера
-          </p>
+          <p className="text-sm uppercase tracking-widest text-neutral-600 mt-8"></p>
         </div>
       </section>
     </main>
