@@ -271,7 +271,7 @@ export default function Index() {
               Мосты — это не просто конструкции, это история, которую я потрогал руками.
             </blockquote>
             <div className="w-16 h-px bg-white mx-auto mb-8"></div>
-            <p className="text-xl uppercase tracking-widest mb-2">Костов Владислав</p>
+            <p className="text-xl uppercase tracking-widest mb-2"></p>
             <p className="text-sm uppercase tracking-widest opacity-70">9Г · Санкт-Петербург · 2024</p>
           </div>
         </div>
