@@ -28,9 +28,7 @@ export default function Index() {
               <br />
               <span className="text-red-600">ПИТЕРА</span>
             </h1>
-            <p className="text-xl max-w-xl text-neutral-600">
-              Один день. Один маршрут. Двадцать один мост Санкт-Петербурга — пешком, вживую, руками.
-            </p>
+            <p className="text-xl max-w-xl text-neutral-600">Один день. Один маршрут. Двадцать один мост Санкт-Петербурга — пешком, вживую.</p>
 
             {/* Stats */}
             <div className="flex gap-12 mt-12">
@@ -41,7 +39,7 @@ export default function Index() {
               <div className="w-px bg-black"></div>
               <div>
                 <div className="text-6xl font-bold tracking-tighter leading-none text-red-600">1</div>
-                <div className="text-sm uppercase tracking-widest text-neutral-500 mt-1">весь день в пути</div>
+                <div className="text-sm uppercase tracking-widest text-neutral-500 mt-1"></div>
               </div>
             </div>
           </div>
@@ -146,8 +144,8 @@ export default function Index() {
       {/* Champions Section */}
       <section className="py-20 px-4 md:px-8 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-6xl font-bold tracking-tighter mb-2">ЧЕМПИОНЫ</h2>
-          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">Самое интересное</p>
+          <h2 className="text-6xl font-bold tracking-tighter mb-2">САМОЕ ИНТЕРЕСНОЕ</h2>
+          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12"></p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black">
             {/* 3 cards */}
@@ -215,7 +213,7 @@ export default function Index() {
                   <line x1="20" y1="280" x2="280" y2="280" stroke="#333" strokeWidth="8"/>
                   <text x="150" y="340" textAnchor="middle" fill="#444" fontSize="11" fontFamily="monospace" letterSpacing="2">САНКТ-ПЕТЕРБУРГ</text>
                   <text x="150" y="50" textAnchor="middle" fill="#dc2626" fontSize="40" fontFamily="sans-serif" fontWeight="bold">21</text>
-                  <text x="150" y="80" textAnchor="middle" fill="#666" fontSize="11" fontFamily="monospace" letterSpacing="2">МОСТОВ</text>
+                  <text x="150" y="80" textAnchor="middle" fill="#666" fontSize="11" fontFamily="monospace" letterSpacing="2">МОСТ</text>
                 </svg>
               </div>
             </div>
