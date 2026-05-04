@@ -67,6 +67,7 @@ const BRIDGE_DETAILS: BridgeDetail[] = [
     statLabel: "длина",
     description: "Самый ажурный мост города. Французский модерн, узорчатые решётки и вид на Петропавловскую крепость.",
     icon: "Sparkles",
+    image: "https://cdn.poehali.dev/projects/6e2a49b9-f915-4a92-bcd5-a93cb69bdc47/bucket/70cfcced-ce3d-40b1-8a3d-b9eaa5a658be.png",
     facts: [
       "Троицкий мост — один из самых длинных разводных мостов Петербурга.",
       "Длина моста составляет 582 метра, он перекинут через Неву.",
