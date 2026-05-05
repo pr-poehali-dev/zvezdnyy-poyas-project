@@ -322,7 +322,7 @@ export default function Index() {
               <h2 className="text-6xl font-bold tracking-tighter mb-8">О ПОХОДЕ</h2>
               <div className="aspect-[4/5] relative mb-8 md:mb-0 overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/6e2a49b9-f915-4a92-bcd5-a93cb69bdc47/bucket/feb06211-c245-4049-9c8a-633c52cb012f.png"
+                  src="https://cdn.poehali.dev/projects/6e2a49b9-f915-4a92-bcd5-a93cb69bdc47/bucket/3bafbba8-02bd-4491-9b8b-3c8b92ad652c.png"
                   alt="О походе"
                   className="w-full h-full object-cover"
                 />
