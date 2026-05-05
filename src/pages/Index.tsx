@@ -345,20 +345,12 @@ export default function Index() {
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-5">
               <h2 className="text-6xl font-bold tracking-tighter mb-8">О ПОХОДЕ</h2>
-              <div className="aspect-[4/5] bg-neutral-900 relative mb-8 md:mb-0 overflow-hidden">
-                <svg viewBox="0 0 300 375" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="300" height="375" fill="#111"/>
-                  <path d="M20,280 Q150,100 280,280" stroke="#dc2626" strokeWidth="3" fill="none"/>
-                  <path d="M20,280 Q150,140 280,280" stroke="#444" strokeWidth="1.5" fill="none"/>
-                  {[60,90,120,150,180,210,240].map((x, i) => {
-                    const y = 280 - Math.round(60 * Math.sin(((x - 20) / 260) * Math.PI));
-                    return <line key={i} x1={x} y1={280} x2={x} y2={y} stroke="#555" strokeWidth="1"/>;
-                  })}
-                  <line x1="20" y1="280" x2="280" y2="280" stroke="#333" strokeWidth="8"/>
-                  <text x="150" y="340" textAnchor="middle" fill="#444" fontSize="11" fontFamily="monospace" letterSpacing="2">САНКТ-ПЕТЕРБУРГ</text>
-                  <text x="150" y="50" textAnchor="middle" fill="#dc2626" fontSize="40" fontFamily="sans-serif" fontWeight="bold">21</text>
-                  <text x="150" y="80" textAnchor="middle" fill="#666" fontSize="11" fontFamily="monospace" letterSpacing="2">МОСТ</text>
-                </svg>
+              <div className="aspect-[4/5] relative mb-8 md:mb-0 overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/6e2a49b9-f915-4a92-bcd5-a93cb69bdc47/bucket/feb06211-c245-4049-9c8a-633c52cb012f.png"
+                  alt="О походе"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="col-span-12 md:col-span-7 md:pt-24">
