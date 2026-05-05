@@ -157,7 +157,7 @@ function BridgeModal({ bridge, onClose }: { bridge: BridgeDetail; onClose: () =>
             <img
               src={bridge.image}
               alt={bridge.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover py-0 px-56"
             />
           </div>
         )}
