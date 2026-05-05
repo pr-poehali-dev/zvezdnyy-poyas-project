@@ -237,37 +237,12 @@ export default function Index() {
 
           {/* Map Visual */}
           <div className="col-span-12 md:col-span-5 flex items-center justify-center">
-            <div className="relative w-full aspect-square bg-neutral-900 overflow-hidden">
-              <svg viewBox="0 0 400 400" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="400" fill="#111111"/>
-                <path d="M40,180 Q120,160 200,175 Q280,190 360,170" stroke="#1a3a5c" strokeWidth="28" fill="none" opacity="0.7"/>
-                <path d="M100,220 Q150,210 200,215 Q250,220 300,210" stroke="#1a3a5c" strokeWidth="16" fill="none" opacity="0.5"/>
-                <line x1="80" y1="100" x2="80" y2="320" stroke="#222" strokeWidth="8"/>
-                <line x1="160" y1="80" x2="160" y2="340" stroke="#222" strokeWidth="8"/>
-                <line x1="240" y1="80" x2="240" y2="340" stroke="#222" strokeWidth="8"/>
-                <line x1="320" y1="100" x2="320" y2="320" stroke="#222" strokeWidth="8"/>
-                <line x1="50" y1="130" x2="350" y2="130" stroke="#222" strokeWidth="8"/>
-                <line x1="50" y1="250" x2="350" y2="250" stroke="#222" strokeWidth="8"/>
-                <line x1="50" y1="310" x2="350" y2="310" stroke="#222" strokeWidth="8"/>
-                <polyline
-                  points="60,290 80,260 100,240 120,220 140,195 160,185 180,178 200,175 220,178 240,182 260,190 280,195 300,200 320,195 340,185 360,180"
-                  stroke="#dc2626"
-                  strokeWidth="3"
-                  fill="none"
-                  strokeDasharray="6,3"
-                />
-                {[
-                  [80,260],[120,220],[160,185],[200,175],[240,182],[280,195],[320,195]
-                ].map(([cx,cy], i) => (
-                  <g key={i}>
-                    <circle cx={cx} cy={cy} r="6" fill="#dc2626"/>
-                    <circle cx={cx} cy={cy} r="10" fill="none" stroke="#dc2626" strokeWidth="1.5" opacity="0.5"/>
-                  </g>
-                ))}
-                <text x="200" y="360" textAnchor="middle" fill="#555" fontSize="11" fontFamily="monospace" letterSpacing="3">МАРШРУТ · ЦЕНТР СПБ</text>
-                <text x="200" y="30" textAnchor="middle" fill="#dc2626" fontSize="13" fontFamily="monospace" letterSpacing="4" fontWeight="bold">21 МОСТ</text>
-              </svg>
-              <div className="absolute bottom-4 right-4 text-white text-xs font-mono opacity-40">СПБ / 2025</div>
+            <div className="relative w-full aspect-square overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/6e2a49b9-f915-4a92-bcd5-a93cb69bdc47/bucket/feb06211-c245-4049-9c8a-633c52cb012f.png"
+                alt="Маршрут 21 мост"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
