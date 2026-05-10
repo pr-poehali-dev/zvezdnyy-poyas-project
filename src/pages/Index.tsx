@@ -301,54 +301,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Photo Cards Section */}
-      <section className="px-4 md:px-8 bg-white py-24">
-        <div className="container mx-auto">
-          <h2 className="text-6xl font-bold tracking-tighter mb-2">ИЗБРАННЫЕ</h2>
-          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">Мосты с историей</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-black">
-            {BRIDGE_DETAILS.filter(b => b.image).map((bridge, idx) => (
-              <div
-                key={bridge.id}
-                onClick={() => openBridge(bridge)}
-                className={`group relative overflow-hidden cursor-pointer ${
-                  idx === 0 ? "md:col-span-2" : ""
-                }`}
-              >
-                <div className={`relative overflow-hidden ${idx === 0 ? "h-[480px] md:h-[560px]" : "h-[340px]"}`}>
-                  <img
-                    src={bridge.image}
-                    alt={bridge.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-300" />
-                  <div className="absolute inset-0 flex flex-col justify-end p-8">
-                    <div className="text-xs uppercase tracking-widest text-red-400 mb-2">{bridge.tag}</div>
-                    <h3 className="text-white font-bold tracking-tighter leading-none mb-3
-                      text-4xl md:text-5xl">
-                      {bridge.name}
-                    </h3>
-                    <div className="flex items-center gap-4">
-                      <span className="text-white/60 text-sm uppercase tracking-widest">{bridge.stat} · {bridge.statLabel}</span>
-                      <span className="flex items-center gap-1 text-white text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 border-b border-white pb-0.5">
-                        Подробнее <Icon name="ArrowRight" size={12} className="text-white" />
-                      </span>
-                    </div>
-                  </div>
-                  <div className="absolute top-8 right-8 text-white/30 font-bold tracking-tighter text-7xl leading-none group-hover:text-white/10 transition-colors">
-                    {bridge.stat}
-                  </div>
-                </div>
-                {idx < BRIDGE_DETAILS.filter(b => b.image).length - 1 && (
-                  <div className="border-b border-black md:border-b-0" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Champions Section */}
       <section className="px-4 md:px-8 bg-white py-[195px] rounded-none">
         <div className="container mx-auto">
