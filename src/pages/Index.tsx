@@ -315,7 +315,7 @@ export default function Index() {
       <section id="champions" className="px-4 md:px-8 bg-black text-white py-[134px]">
         <div className="container mx-auto">
           <h2 className="text-6xl font-bold tracking-tighter mb-4">МАРШРУТ</h2>
-          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">21 мост · весь день в пути</p>
+          <p className="text-neutral-400 uppercase tracking-widest text-sm mb-12">24 мост · весь день в пути</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-neutral-800">
             {BRIDGE_LIST.map(({ n, name }) => (
